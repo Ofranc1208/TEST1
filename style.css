@@ -3,7 +3,7 @@
     =========================== */
 :root {
   --font-family: 'Poppins', sans-serif;
-  --color-background: #f6f7f1;
+  --color-background: #f3f3f3;
   --color-text: #d3d2d2;
   --color-primary: #1560eb;
   --color-primary-hover: #003d80;
@@ -11,7 +11,7 @@
   --color-navbar-link: #fff;
   --color-navbar-link-hover: #007bff;
   --color-navbar-link-active: #ffc107;
-  --color-card-background: #f8f9fa;
+  --color-card-background: #f3f3f3;
   --color-footer-background: #333;
   --color-footer-text: #d3d2d2;
   --color-heading: #222121;
