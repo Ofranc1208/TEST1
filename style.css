@@ -4,7 +4,7 @@
 :root {
   --font-family: 'Poppins', sans-serif;
   --color-background: #f3f3f3;
-  --color-text: #d3d2d2;
+  --color-text: #222121;;
   --color-primary: #1560eb;
   --color-primary-hover: #003d80;
   --color-navbar: #333;
@@ -71,7 +71,7 @@ p.lead {
 p.card-text {
   font-size: 0.9375rem; /* 15px */
   line-height: 1.5;
-  color: #555;
+  color: #1d1b1b;
 } 
 
 
@@ -306,3 +306,68 @@ body {
 .section-4 {
   color: #222121; /* Dark text on light background */
 }
+
+/* ===========================
+    Banner Specific Styles
+    =========================== */
+
+    .banner-container {
+      width: 100%; /* Full width for better visibility */
+      max-width: 800px; /* Max width to maintain design integrity on larger screens */
+      overflow: hidden; /* Keep all contents contained within the banner */
+      background-color: #f3f3f3; /* Light background for a fresh look */
+      color: #1560eb; /* Vibrant green text color for standout content */
+      padding: 20px 10px; /* Increased padding for better spacing */
+      position: relative;
+      font-family: 'Poppins', sans-serif; /* Consistent with the rest of the site */
+      text-align: center; /* Centering text to balance the banner content */
+      border-radius: 10px; /* Rounded corners for a smoother look */
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease; /* Smooth transitions for interactions */
+      display: flex; /* Using flex to align items better */
+      justify-content: center; /* Center items horizontally */
+      align-items: center; /* Center items vertically */
+    }
+    
+    .banner {
+      display: inline-flex; /* Use inline-flex to align image and text */
+      align-items: center; /* Vertically center the items */
+      white-space: nowrap; /* Prevent text from wrapping */
+      animation: moveBanner 10s linear infinite; /* Reduced from 15s to 10s */
+      font-size: 1.2em;
+      padding-left: 100%; /* Start the content outside the right edge */
+    }
+    
+    
+    .banner img {
+      height: 24px; /* Adjust the height as needed */
+      width: 24px;  /* Adjust the width as needed */
+      margin-right: 10px; /* Space between image and text */
+    }
+    
+    @keyframes moveBanner {
+      from { transform: translateX(25%); } /* Start closer to the screen's edge */
+      to { transform: translateX(-100%); }
+    }
+    
+    
+    .banner-container:hover {
+      transform: scale(1.05); /* Slightly enlarge on hover for a dynamic effect */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover for more depth */
+    }
+    
+    /* Responsive Design for Banner */
+    @media (max-width: 600px) {
+      .banner-container {
+        padding: 15px 5px; /* Adjust padding to fit smaller screens */
+        font-size: 0.9em; /* Slightly smaller text on mobile devices */
+      }
+    
+      .banner img {
+        height: 20px;
+        width: 20px;
+        margin-right: 8px;
+      }
+    }
+    
+
+
